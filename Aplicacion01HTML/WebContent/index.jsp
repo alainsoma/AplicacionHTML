@@ -1,0 +1,1 @@
+<jsp:forward page="/FormularioInsertarLibro.jsp?faces-redirect=true" />

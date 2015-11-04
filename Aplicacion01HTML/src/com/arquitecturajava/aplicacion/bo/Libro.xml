@@ -1,0 +1,24 @@
+<!-- Fichero xml de mapeo de una Entidad con Hibernate -->
+
+<!-- NOTA: Este fichero se encuentra en desuso en favor de las anotaciones. -->
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.arquitecturajava.aplicacion.bo">
+	<class name="Libro" table="libros">
+		<id name="idLibro" type="int">
+            <column name="idLibro" />
+            <generator class="identity" />
+        </id>
+        <property name="isbn" type="string">
+            <column name="isbn" length="45" not-null="true" />
+        </property>
+        <property name="titulo" type="string">
+            <column name="titulo" length="45" not-null="true" />
+        </property>
+        <property name="categoria" type="string">
+            <column name="categoria" length="45" not-null="true" />
+        </property>
+	</class>
+</hibernate-mapping>
